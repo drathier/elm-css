@@ -3,6 +3,7 @@ module Tests exposing (..)
 import Arithmetic
 import Colors
 import Compile
+import Css
 import Css exposing (Stylesheet)
 import Expect exposing (Expectation)
 import Fixtures

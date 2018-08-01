@@ -805,7 +805,8 @@ import Css.Structure as Structure exposing (..)
 import Hex
 import String
 import Tuple
-
+import Util exposing (someExportedId)
+import Mod as M
 
 {-| -}
 type alias Stylesheet =
@@ -837,9 +838,9 @@ type PseudoElement
 cssFunction : String -> List String -> String
 cssFunction funcName args =
     funcName
-        ++ "("
+        ++ M.asd "("
         ++ String.join ", " args
-        ++ ")"
+        ++ someExportedId ")"
 
 
 {-| Caution: trickery ahead!
